@@ -10,7 +10,7 @@ console.log("pcNumber:", pcNumber); // ? Stampo
 // ? SE l'utente ha il numero più piccolo
 if (pcNumber > userNumber) {
   console.log("Il computer ha vinto");
-  alert("Il computer ha vinto");
+  alert("Il computer ha vinto :( , ritenta");
 }
 
 // ? ALTRIMENTI SE l'utente ha il numero più grande
