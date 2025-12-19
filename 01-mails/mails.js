@@ -13,20 +13,20 @@ const mails = [
 
 // ? Chiedo all'utente di inserire la sua mail
 const userMail = prompt("Inserisci il tuo indirizzo email...");
+console.log("userMail:", userMail);
+
+let userMailCheck = false; // ? Definisco una variabile switch con valore falso
 
 // ? Effettuo un controllo per verificare che la mail inserita dall'utente corrisponda a una di quelle in elenco
 for (let i = 0; i < mails.length; i++) {
   currentMail = mails[i]; // ? Per covnenienza rinomino i singoli items dell'array
+  console.log(currentMail);
 
   // ? SE la mail dell'user corrisponde a una di quelle nell'array
   if (userMail === currentMail) {
     console.log("Benvenuto!!"); // ? Stampo il messaggio di benvenuto (esito positivo)
-  }
-
-  // ? ALTRIMENTI, informo l'utente che l'indirizzo non è presente
-  else {
-    console.log(
-      "Spiacente, il tuo indirizzo email non risulta essere tra quelli autorizzati" // ? Stampo il messaggio di accesso negato (esito negativo)
-    );
+    userMailCheck = true;
+    console.log(userMailCheck);
+    alert("Benvenuto!! Puoi procedere al gioco");
   }
 }
