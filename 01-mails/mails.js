@@ -24,9 +24,16 @@ for (let i = 0; i < mails.length; i++) {
 
   // ? SE la mail dell'user corrisponde a una di quelle nell'array
   if (userMail === currentMail) {
-    console.log("Benvenuto!!"); // ? Stampo il messaggio di benvenuto (esito positivo)
-    userMailCheck = true;
+    userMailCheck = true; // ? Faccio lo switch della variabile
     console.log(userMailCheck);
-    alert("Benvenuto!! Puoi procedere al gioco");
   }
+}
+
+// ? SE la variabile è vera
+if (userMailCheck === true) {
+  alert("Benvenuto, procedi per accedere al gioco");
+
+  // ? ALTRIMENTI
+} else {
+  alert("Spiacenti, l'indirizzo email non è valido");
 }
